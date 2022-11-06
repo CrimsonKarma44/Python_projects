@@ -1,0 +1,15 @@
+if you want to format yor message with html style
+
+after line 28 man.py
+
+html = f'''
+<html>
+    <body>
+        <h1>{subject}</h1>
+        <p>{body}</p>
+    </body>
+</html>
+
+# actually what ever you like
+
+message.add_alternative(html, sybtype="html")
