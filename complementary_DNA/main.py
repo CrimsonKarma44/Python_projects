@@ -13,3 +13,6 @@ Example: (input --> output)
 "ATTGC" --> "TAACG"
 "GTAT" --> "CATA"
 '''
+
+def main():
+    pass
