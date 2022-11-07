@@ -3,4 +3,5 @@ def leap_year(date):
         return "Leap Year!"
     return 'Not a Leap Year...'
 
-print(leap_year(2024))
+if __name__ == "__main__":
+    print(leap_year(2024))
