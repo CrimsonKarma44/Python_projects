@@ -15,3 +15,16 @@ printer_error(s) => "0/14"
 s="aaaxbbbbyyhwawiwjjjwwm"
 printer_error(s) => "8/22"
 '''
+def printer_error(s):
+    import re
+    love = re.compile(r"[^a-m]")
+    h = love.findall(s)
+    v = len(s)
+    return str(len(''.join(list(h))))+'/'+str(v)
+
+s="aaabbbbhaijjjm"
+d = printer_error(s)
+print(d)
+s="kkkwwwaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz"
+d = printer_error(s)
+print(d)
