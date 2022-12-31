@@ -32,9 +32,17 @@ def solution(roman):
     'D': 500,
     'M': 1000
     }
-    for i in roman:
-        if 
+    num = converter[roman[-1]]
+    for i in range(2, len(roman)+1):
+        print(roman[-i])
+        if converter[roman[-i+1]] == converter[roman[-i]]:
+            num += converter[roman[-i]]
+        elif num > converter[roman[-i]]:
+            num -= converter[roman[-i]]
+        elif num <= converter[roman[-i]]:
+            num += converter[roman[-i]]
+    print(num)
 
 
-print(solution('XIV'))
+solution('XD')
 

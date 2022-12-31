@@ -14,5 +14,23 @@ Example: (input --> output)
 "GTAT" --> "CATA"
 '''
 
-def main():
-    pass
+DNA1 = "ATTGC"
+DNA2 = "GTAT"
+
+def main(value):
+    reverse = ''
+    for i in value:
+        if i == 'A':
+            reverse += 'T'
+        elif i == 'T':
+            reverse += 'A'
+        elif i == 'C':
+            reverse += ' G'
+        elif i == 'G':
+            reverse += 'C'
+    return reverse
+
+change = main(DNA1)
+print(change)
+change = main(DNA2)
+print(change)

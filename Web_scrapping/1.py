@@ -1,6 +1,7 @@
-from bs4 import BeautifulSoup
+# from bs4 import BeautifulSoup
 import requests
 
 response = requests.get("https://www.google.com/")
-
-print(response.status_code)
+response.raise_for_status()
+# with open("Love.html", 'w') as file:
+#     file.write(response.content)

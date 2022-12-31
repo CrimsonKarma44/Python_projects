@@ -5,7 +5,7 @@ import subprocess
 
 # problem with this line is continous prompt of password
 # alternative is to run 'service mysql start' only at the beginning of accessing the mysql server
-subprocess.run('/home/karma/CODE/python/Python_projects/multi-clipboard/service_start.sh')
+subprocess.run('/home/karma/Documents/CODE/python/Python_projects/multi-clipboard/service_start.sh')
 
 mydb = mysql.connector.connect(host="localhost", user='root', passwd="password", database="copy")
 storage = mydb.cursor()
